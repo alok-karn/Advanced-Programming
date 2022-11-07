@@ -2,9 +2,11 @@
 using namespace std;
 #define PI 3.14
 class Circle {
-    
-    public:
     int radius;
+    public:
+    int getRad() {
+        return this->radius;
+    }
         Circle(int rad) {
             radius = rad;
         }
@@ -12,10 +14,10 @@ class Circle {
             cout << "Tada!!! hello Desctructor " << endl;
         }
         int findPeri() {
-            return 2 * PI * radius;
+            return 2 * PI * getRad();
         }
         int findArea() {
-            return PI * pow(radius, 2);
+            return PI * pow(getRad(), 2);
         }
 };
 
@@ -23,9 +25,9 @@ class Sphere : public Circle {
     public:
     Sphere(int R) : Circle(R){}
         int surfaceArea() {
-            return 2 * radius * findPeri();
+            return 2 * getRad() * findPeri();
         }int volume() {
-            int vol = (4/3) * radius * findArea();
+            int vol = (4/3) * getRad() * findArea();
             return vol;
         }
 
