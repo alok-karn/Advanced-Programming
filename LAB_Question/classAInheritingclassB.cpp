@@ -43,4 +43,5 @@ int main() {
     B1.readParent();
     B1.print();
     B1.x;
+    cout << sizeof(A1) << endl;
 }
