@@ -14,7 +14,7 @@ class Complex1 {
         cout << "Real- " << real << endl;
         cout << "Img- " << img << endl;
     }
-    friend void addComplex(&Complex1, &Complex2); // friend function
+    friend void addComplex(Complex1, Complex2); // friend function
 };
 
 class Complex2 {
@@ -30,7 +30,7 @@ class Complex2 {
         cout << "Real- " << real << endl;
         cout << "Img- " << img << endl;
     }
-    friend void addComplex(&Complex1, &Complex2);
+    friend void addComplex(Complex1, Complex2);
 };
 
 void addComplex(Complex1 c1, Complex2 c2) {
