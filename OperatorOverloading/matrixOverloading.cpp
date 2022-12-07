@@ -1,6 +1,7 @@
 #include<bits/stdc++.h>
 using namespace std;
-
+#define rs 100
+#define cs 100
 class Matrix {
     public:
 
@@ -11,7 +12,7 @@ class Matrix {
             col = c;
         }
 
-        int a[100][100];
+        int a[rs][cs];
         Matrix() {
             for (int i = 0; i < row; i++) {
                 for (int j = 0; j < col; j++) {
