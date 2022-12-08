@@ -21,7 +21,7 @@ class Matrix {
             }
         }
        bool operator == (Matrix &obj) {
-                if(row == obj.col){
+                if(row == obj.row && col = obj.col ){
                     return true;
                 } return false;
             }
